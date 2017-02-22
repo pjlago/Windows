@@ -6,6 +6,6 @@
   gather_facts: false
   tasks:
     - name: Start Setup SQL 2008 runAs
-      win_shell: C:\Insitu\InstallSQL2008R2.ps1 -password {{ password }}
+      win_shell: C:\Install\InstallSQL2008R2.ps1 -password {{ password }}
      
     
