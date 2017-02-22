@@ -1,0 +1,11 @@
+---
+# Ejecuta la instalación desatendida de SQL Server 2008
+
+- name: Install SQL 2008
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Start Setup SQL 2008 runAs
+      win_shell: C:\Insitu\InstallSQL2008R2.ps1 -password {{ password }}
+     
+    
